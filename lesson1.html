@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson1</title>
+   <link rel="stylesheet" href="lesson1.css">
+</head>
+
+<body>
+   <header>
+      <h2>Хедер</h2>
+      <div class="signup">
+         <h4 class="inner-heading">Регистрация</h4>
+         <form class="reg-form" action="https://echo.html.ru/" method="post">
+            <label class="reg-label" for="reg-name">Логин</label>
+            <input class="name" type="text" id="reg-name" name="reg-name" placeholder="Логин" required>
+            <label class="reg-label" for="reg-pass">Пароль</label>
+            <input class="password" type="password" id="reg-pass" name="reg-pass" placeholder="**********" required>
+            <div class="security">
+               <div class="security-bar"></div>
+            </div>
+            <input class="show-password visually-hidden" type="checkbox" id="show-pass">
+            <label class="checkbox-label" for="show-pass">Показать пароль</label><br>
+            <button class="button20" type="submit">Зарегистрироваться</button>
+         </form>
+      </div>
+   </header>
+   <main>
+      <section class="main-section">
+         <article>
+            <h1>Основное содержание </h1>
+            <div>
+               <p>1. Текст который будет заменён и в вместо него будет текст из скрипта</p>
+               <button class="like-button" type="button">
+               </button>
+               <span class="likes-number">10</span>
+            </div>
+            <p class="article" data-category="HR">2. HR (по-русски произносится как «эйч-ар») это всё, что связано с
+               кадрами, то есть с «человеческими ресурсами» (Human Resources). #HR</p><br>
+            <p class="article" data-category="IT">3. Информационные технологии (ИТ, также —
+               информационно-коммуникационные технологии) — процессы, методы поиска, сбора, хранения, обработки
+               информации. #IT</p><br>
+            <p class="article" data-category="SEO">4. SEO — Search Engine Optimization — поисковая оптимизация сайта в
+               соответствии с требованиями Google, Yandex и т.д. #SEO</p><br>
+            <p class="paragraph5">5. Параграф которому мы будем менять класс</p><br>
+            <button class="knopka2" type="button">Кнопка1</button>
+            <button class="knopka2" type="button">Кнопка2</button>
+            <button class="knopka2" type="button">Кнопка3</button>
+            <button class="knopka2" type="button">Кнопка4</button>
+            <button class="knopka2" type="button">Кнопка5</button>
+            <button class="knopka2" type="button">Кнопка6</button><br>
+            <p>6. Текст который тоже уйдёт под замену</p>
+            <p class="longread">Многих пугает слово алгоритм, кажется, что это что-то сложное, но на деле это просто
+               законченный набор
+               инструкций.
+               Получается, что вы используете алгоритмы и в обычной жизни, например, когда готовите по рецепту, или
+               добираетесь по навигатору из точки А в точку Б,
+               или решаете квадратное уравнение.
+               Когда разработчики говорят об алгоритмах, они имеют в виду не все алгоритмы, а только популярные решения
+               стандартных задач.
+               Многие алгоритмы были придуманы ещё до компьютеров: например, алгоритм поразрядной сортировки был
+               запатентован в девятнадцатом веке в США для обработки данных,
+               полученных после переписи населения. Для решения одной и той же задачи могут подходить разные алгоритмы.
+               Представьте, у вас есть список, в котором нужно найти элемент.
+               Предположим, что это список товаров в интернет-магазине и пользователь вводит в фильтр название товара,
+               которое начинается с буквы «Е».
+               Как это сделать?</p>
+         </article>
+         <aside>
+            <h3 style="font-size: 20px;">Сайдбар</h3>
+            <div></div>
+            <div>
+               <input type="password" class="input1" value="123456789">
+               <button class="knopka3" type="button"
+                  data-des-cription="Текст хранящийся в атрибуте data, нажимаемой кнопки">
+                  Пароль
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </button>
+            </div>
+            <div class="div1"></div>
+            <div class="filters">
+               <label>Фильтр1
+                  <select class="filter1" name="news-filter">
+                     <option value="HR">HR</option>
+                     <option value="IT">IT</option>
+                     <option value="SEO">SEO</option>
+                     <option value="games">Игры</option>
+                     <option value="all" selected>Все варианты</option>
+                  </select>
+               </label>
+               <label>Фильтр2
+                  <select class="filter2" name="news-filter">
+                     <option value="HR">HR</option>
+                     <option value="IT">IT</option>
+                     <option value="SEO">SEO</option>
+                     <option value="games">Игры</option>
+                     <option value="all" selected>Все варианты</option>
+                  </select>
+               </label>
+            </div>
+            <div class="popUp">
+               <span class="popUp-text">Контент отмеченный категорией Игры, на странице отсутствует</span>
+               <button class="button close-button" type="button"><span>Закрыть</span></button>
+            </div>
+            <div class="container">
+               <div class="color-filters">
+                  <label>Цвет текста:
+                     <select class="filter color-setting" name="font-color">
+                        <option value="inherit" selected>По умолчанию</option>
+                        <option value="black">Чёрный</option>
+                        <option value="white">Белый</option>
+                        <option value="pink">Розовый</option>
+                        <option value="darkred">Тёмно-красный</option>
+                        <option value="darkorange">Оранжевый</option>
+                        <option value="saddlebrown">Коричневый</option>
+                        <option value="gold">Золотой</option>
+                        <option value="greenyellow">Салатовый</option>
+                        <option value="forestgreen">Зелёный</option>
+                        <option value="aquamarine">Аквамарин</option>
+                        <option value="darkblue">Тёмно-синий</option>
+                        <option value="indigo">Индиго</option>
+                        <option value="mediumpurple">Фиолетовый</option>
+                        <option value="purple">Пурпурный</option>
+                     </select>
+                  </label>
+                  <label>Цвет фона:
+                     <select class="filter background-setting" name="background-color">
+                        <option value="inherit" selected>По умолчанию</option>
+                        <option value="black">Чёрный</option>
+                        <option value="white">Белый</option>
+                        <option value="pink">Розовый</option>
+                        <option value="darkred">Тёмно-красный</option>
+                        <option value="darkorange">Оранжевый</option>
+                        <option value="saddlebrown">Коричневый</option>
+                        <option value="gold">Золотой</option>
+                        <option value="greenyellow">Салатовый</option>
+                        <option value="forestgreen">Зелёный</option>
+                        <option value="aquamarine">Аквамарин</option>
+                        <option value="darkblue">Тёмно-синий</option>
+                        <option value="indigo">Индиго</option>
+                        <option value="mediumpurple">Фиолетовый</option>
+                        <option value="purple">Пурпурный</option>
+                     </select>
+                  </label>
+               </div>
+               <label>Размер текста (<span class="pixels">18</span>px)
+                  <input class="size-setting" type="range" min="8" max="28" step="1" value="18">
+               </label>
+            </div>
+         </aside>
+      </section>
+      <section>
+         <div>
+            <form action="https://echo.htmlacademy.ru/courses" method="post" class="comment-form">
+               <textarea class="input" rows="3" placeholder="Комментарий" required></textarea><br>
+               <span class="text-counter">Использовано
+                  <span class="char-counter">0</span>/50 символов
+               </span>
+               <button class="sub" type="submit">Отправить</button>
+            </form>
+            <div class="creature">
+               <div>
+                  <p>(</p>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer>
+      <h4>Футер</h4>
+      <button class="up-button" type="button">
+         ↑
+      </button>
+   </footer>
+   <script src="lesson1.js"></script>
+</body>
+
+</html>
